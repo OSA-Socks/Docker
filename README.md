@@ -34,9 +34,9 @@ Docker installation methods vary from OS to OS and distro to distro, so I'll do 
 
 [On Linux](#on-linux)
 
-[On Windows](#on-windows)
+[On Windows](https://docs.docker.com/desktop/setup/install/windows-install/)
 
-[On Mac](#on-mac)
+[On Mac](https://docs.docker.com/desktop/setup/install/mac-install/)
 
 ### On Linux
 [Arch Linux & Manjaro Linux](#arch-linux--manjaro-linux)
@@ -83,10 +83,6 @@ Install the packages
 ```sh
 sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
-
-
-### On Windows
-### On Mac
 
 ### Distro Agnostic Finishes
 Enable the service
