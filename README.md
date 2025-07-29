@@ -18,7 +18,10 @@ This guide is NOT a crash course on ANY of the following:
 - SOCKS
 - The Shell
 - Linux
+
 Please acquaint yourself with these tools to an intermediate level before continuing.
+
+
 The majority of these instructions will be for linux, some adaptation may be required for windows machines (although, if you care about your privacy in 2025, you may want to switch to linux too).
 
 ## Choosing a VPN
