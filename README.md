@@ -105,7 +105,7 @@ Preferrably an external drive, so you don't have to remake your docker compose o
 
 Create a file in said directory named exactly `docker-compose.yml`.
 
-Now edit it in your preferred text editor (I recommend [VSCodium](https://vscodium.com/)).
+Now edit it in your preferred text editor (I recommend [VSCodium](https://vscodium.com/)!).
 
 We want to deploy two services with docker: Gluetun, and SOCKS.
 
