@@ -36,8 +36,6 @@ Docker installation methods vary from OS to OS and distro to distro, so I'll do 
 
 [Mac Instructions](https://docs.docker.com/desktop/setup/install/mac-install/)
 
-### On Linux
-
 ### [Arch Linux](https://archlinux.org) & [Manjaro Linux](https://manjaro.org)
 Install the packages
 ```sh
