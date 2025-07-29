@@ -32,49 +32,49 @@ Either way, ensure your VPN of choice has a strict no log policy.
 ## Installing Docker
 Docker installation methods vary from OS to OS and distro to distro, so I'll do my best to cover the big ones.
 
-### Linux-Specific
-#### Required Packages
-#### [Arch Linux](https://archlinux.org) & [Manjaro Linux](https://manjaro.org)
-Install the packages
-```sh
-sudo pacman -S docker docker-compose
-```
-#### [Ubuntu](https://ubuntu.com)
-Add the docker repo (classic Ubuntu horrors)
-```sh
-sudo apt-get update
-sudo apt-get install ca-certificates curl
-sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
-echo \
-  "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
-  $(lsb_release -cs) stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt-get update
-```
+<details>
+    <summary>On Linux</summary>
+    #### [Arch Linux](https://archlinux.org) & [Manjaro Linux](https://manjaro.org)
+    Install the packages
+    ```sh
+    sudo pacman -S docker docker-compose
+    ```
+    #### [Ubuntu](https://ubuntu.com)
+    Add the docker repo (classic Ubuntu horrors)
+    ```sh
+    sudo apt-get update
+    sudo apt-get install ca-certificates curl
+    sudo install -m 0755 -d /etc/apt/keyrings
+    sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
+    echo \
+    "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
+    $(lsb_release -cs) stable" | \
+    sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    sudo apt-get update
+    ```
 
-Install the packages
-```sh
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-```
-#### [Fedora Linux](https://fedoraproject.org)
-Add the Docker repo
-```sh
-sudo dnf -y install dnf-plugins-core
-sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
-```
-Install the packages
-```sh
-sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-```
+    Install the packages
+    ```sh
+    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    ```
+    #### [Fedora Linux](https://fedoraproject.org)
+    Add the Docker repo
+    ```sh
+    sudo dnf -y install dnf-plugins-core
+    sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+    ```
+    Install the packages
+    ```sh
+    sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    ```
 
-### Distro Agnostic Finishes
-Enable the service
-```sh
-sudo systemctl enable docker --now
-```
-This is required on ALL (most) distros!
-
+    ### Distro Agnostic Finishes
+    Enable the service
+    ```sh
+    sudo systemctl enable docker --now
+    ```
+    This is required on ALL (most) distros!
+</details>
 ## Creating your Docker Compose
 
 ## Deploying
