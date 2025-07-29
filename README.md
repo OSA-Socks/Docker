@@ -31,8 +31,11 @@ Either way, ensure your VPN of choice has a strict no log policy.
 
 ## Installing Docker
 Docker installation methods vary from OS to OS and distro to distro, so I'll do my best to cover the big ones.
+
 [On Linux](#on-linux)
+
 [On Windows](#on-windows)
+
 [On Mac](#on-mac)
 
 ### On Linux
