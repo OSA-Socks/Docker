@@ -124,6 +124,7 @@ services:
       - VPN_SERVICE_PROVIDER=protonvpn
       - OPENVPN_USER=userHere
       - OPENVPN_PASSWORD=passwordHere
+      # Switzerland is a good country to use: fast, and typically uncensored
       - SERVER_COUNTRIES=Switzerland
       - SERVER_CITIES=Zurich
     ports:
@@ -144,6 +145,8 @@ Now that you have created your docker compose, you need to deploy it. First, nav
 This can be done by either:
 - Clicking some variation of "Open in terminal" in the context menu of most Linux file managers
 - Opening your shell normally, and running `cd (your docker folder path)`
+
+
 Now that you're in the folder, simply run `docker compose up -d`.
 On a first run, it may take a few minutes to download the images.
 
