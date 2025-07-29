@@ -46,14 +46,14 @@ Docker installation methods vary from OS to OS and distro to distro, so I'll do 
 [Fedora Linux](#fedora-linux)
 
 
-#### [Arch Linux](https://archlinux.org) & [Manjaro Linux](https://manjaro.org)
+### [Arch Linux](https://archlinux.org) & [Manjaro Linux](https://manjaro.org)
 Install the packages
 ```sh
 sudo pacman -S docker docker-compose
 ```
 
 
-#### [Ubuntu](https://ubuntu.com)
+### [Ubuntu](https://ubuntu.com)
 Add the docker repo (classic Ubuntu horrors)
 ```sh
 sudo apt-get update
@@ -73,7 +73,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 
 
-#### [Fedora Linux](https://fedoraproject.org)
+### [Fedora Linux](https://fedoraproject.org)
 Add the Docker repo
 ```sh
 sudo dnf -y install dnf-plugins-core
