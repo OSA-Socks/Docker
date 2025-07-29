@@ -29,7 +29,6 @@ The easiest and most reliable way to host your own socks proxy is with gluetun a
 For this, a paid VPN provider is required: Personally, I believe the best are [Proton](https://protonvpn.com/) and [Mullvad](https://mullvad.net/en).
 Either way, ensure your VPN of choice has a strict no log policy.
 
-## Installing Docker
 <details>
   <summary>On Linux</summary>
 
@@ -37,15 +36,18 @@ Either way, ensure your VPN of choice has a strict no log policy.
     <summary>Arch Linux & Manjaro Linux</summary>
 
     Install the packages
+
     ```sh
     sudo pacman -S docker docker-compose
     ```
+
   </details>
 
   <details>
     <summary>Ubuntu</summary>
 
     Add the docker repo (classic Ubuntu horrors)
+
     ```sh
     sudo apt-get update
     sudo apt-get install ca-certificates curl
@@ -59,32 +61,38 @@ Either way, ensure your VPN of choice has a strict no log policy.
     ```
 
     Install the packages
+
     ```sh
     sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
     ```
+
   </details>
 
   <details>
     <summary>Fedora Linux</summary>
 
     Add the Docker repo
+
     ```sh
     sudo dnf -y install dnf-plugins-core
     sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
     ```
 
     Install the packages
+
     ```sh
     sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
     ```
+
   </details>
 
   ### Distro Agnostic Finishes
 
   Enable the service
+
   ```sh
   sudo systemctl enable docker --now
-```
+````
 
 This is required on ALL (most) distros!
 
