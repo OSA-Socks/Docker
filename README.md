@@ -31,13 +31,22 @@ Either way, ensure your VPN of choice has a strict no log policy.
 
 ## Installing Docker
 Docker installation methods vary from OS to OS and distro to distro, so I'll do my best to cover the big ones.
+[On Linux](#on-linux)
+[On Windows](#on-windows)
+[On Mac](#on-mac)
 
-### Linux-Specific
+### On Linux
+[Arch Linux & Manjaro Linux](#arch-linux--manjaro-linux)
+[Ubuntu](#ubuntu)
+[Fedora Linux](#fedora-linux)
+
 #### [Arch Linux](https://archlinux.org) & [Manjaro Linux](https://manjaro.org)
 Install the packages
 ```sh
 sudo pacman -S docker docker-compose
 ```
+
+
 #### [Ubuntu](https://ubuntu.com)
 Add the docker repo (classic Ubuntu horrors)
 ```sh
@@ -56,6 +65,8 @@ Install the packages
 ```sh
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
+
+
 #### [Fedora Linux](https://fedoraproject.org)
 Add the Docker repo
 ```sh
@@ -66,6 +77,10 @@ Install the packages
 ```sh
 sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
+
+
+### On Windows
+### On Mac
 
 ### Distro Agnostic Finishes
 Enable the service
