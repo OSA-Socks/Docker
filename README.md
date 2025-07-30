@@ -109,9 +109,9 @@ Now edit it in your preferred text editor (I recommend [VSCodium](https://vscodi
 
 We want to deploy two services with docker: Gluetun, and SOCKS.
 
-Here is an example compose config, you can substitute the 
+Here is an example compose config, you can substitute the
 [gluetun environment variables](https://github.com/qdm12/gluetun-wiki/tree/main/setup/providers)
- with the vars suited to your provider.
+with the vars suited to your provider.
 
 ```yaml
 services:
@@ -128,7 +128,7 @@ services:
       - SERVER_COUNTRIES=Switzerland
       - SERVER_CITIES=Zurich
     ports:
-    # This is the port for your SOCKS proxy!
+      # This is the port for your SOCKS proxy!
       - 1080:1080
     restart: unless-stopped
     devices:
@@ -141,13 +141,20 @@ services:
 ```
 
 ## Deploying
+
 Now that you have created your docker compose, you need to deploy it. First, navigate to your directory in a shell.
 This can be done by either:
+
 - Clicking some variation of "Open in terminal" in the context menu of most Linux file managers
 - Opening your shell normally, and running `cd (your docker folder path)`
-
 
 Now that you're in the folder, simply run `docker compose up -d`.
 On a first run, it may take a few minutes to download the images.
 
 ## What Now?
+
+If you followed everything in this document correctly, you should have a VPN protected SOCKS5 proxy located at `127.0.0.1:1080`.
+
+From here, you can use this in any software that supports or requires a proxy.
+
+If you wish to have a "whitelist-only" system, check out my documentation on [creating a PAC file](https://github.com/OSA-Socks/Pac)
